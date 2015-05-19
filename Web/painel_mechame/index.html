@@ -11,10 +11,6 @@
                   z-index:1;
 	  				
 	  }
-          * {
-              margin:0px;
-              padding:0px;
-          }
           
       .topo {
           width:100%;
@@ -43,10 +39,11 @@
       }
       
       .usuario {
-          width:440px;
+          width:470px;
           height:125px;
           float:right;
 		  color:#FFF;
+		  border:2px solid #000;
 
       }
 	  
@@ -57,37 +54,23 @@
 		  margin-left:10px;
 		  position:relative;
 		  left:33px;
-	  }
-	  
-	   .usuario img.setup {
-		  width:30px;
-		  height:30px;
-		  position:absolute;
-		  left: 1255px;
-		  top:50px;
-		 
+		  border:2px solid #000;
 	  }
 	  
 	  .usuario h2 {
 		  font-size:25px;
 		  text-align:center;
-		  margin-right:45px;
+		  margin-right:65px;
 		  margin-top:10px;
+		  border:2px solid #000;
 	  }
 	  
 	  
 	  .usuario h4 {
 		  font-size:20px;
 		  margin-top:30px;
-		  margin-right:45px;
-	  }
-	  
-	  .usuario .setup {
-		  width:30px;
-		  height:30px;		  
-		  position:absolute;
-		  top:52px;
-		  
+		  margin-right:65px;
+		  border:2px solid #000;
 	  }
 	  
 	  .lista-lembretes {
@@ -224,15 +207,21 @@
                 <img src="img/usuario.png" title="Usuário" alt="Usuário">
                     <div class="textos-usuario">
                         <h4>Bem Vindo</h4>
-                        <h2>#Guilherme### 
+                        <h2>#############
+                            <div class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
-                                    <img class="setup" src="img/setup.png"> 
+                                        <img src="img/setup.png" width="20px" height="20px"> 
                             </a>
+                            
+                            <ul class="dropdown-menu">
+					    		<li> <a href="http://google.com.br">Google</a></li>
+                                <li> <a href="http://facebook.com.br">Facebook</a></li>
+                        	</ul>
+                        </div>
                         </h2>
                         
-                        <ul class="dropdown-menu">
-					    	<li> <a href="#">Teste</a></li>
-                        </ul>
+                        
+                        
                         
                     </div>
           </div>
