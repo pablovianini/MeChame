@@ -286,6 +286,7 @@ th {
 .glyphicon-plus:before {
   content: "\2b";
 }
+
 .glyphicon-euro:before,
 .glyphicon-eur:before {
   content: "\20ac";
@@ -2557,6 +2558,8 @@ output {
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
+
+
 .form-control:focus {
   border-color: #2c3e50;
   outline: 0;
@@ -2571,8 +2574,9 @@ output {
   color: #acb6c0;
 }
 .form-control::-webkit-input-placeholder {
-  color: #acb6c0;
+    color:#acb6c0;
 }
+
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
@@ -3127,6 +3131,12 @@ fieldset[disabled] .btn-primary.active {
   color: #2c3e50;
   background-color: #ffffff;
 }
+.btn-novo {
+  border-color: #18bc9c;
+  color: #ffffff;
+  background-color: #18bc9c;
+}
+
 .btn-success {
   color: #ffffff;
   background-color: #18bc9c;
