@@ -9,5 +9,16 @@
             <file>file:/C:/Repositorio%20Git/MeChame/MeChame/Server/br.com.mechame/src/java/br/com/mechame/restful/service/ApplicationConfig.java</file>
             <file>file:/C:/Repositorio%20Git/MeChame/MeChame/Server/br.com.mechame/src/java/br/com/mechame/restful/service/LembreteFacadeREST.java</file>
         </group>
+        <group name="MeChame">
+            <file>file:/C:/Repositorio%20Git/MeChame/MeChame/Server/br.com.mechame/src/java/br/com/mechame/restful/service/AbstractFacade.java</file>
+            <file>file:/C:/Repositorio%20Git/MeChame/MeChame/Server/br.com.mechame/src/java/br/com/mechame/restful/service/UsuarioFacadeREST.java</file>
+            <file>file:/C:/Repositorio%20Git/MeChame/MeChame/Server/br.com.mechame/src/java/br/com/mechame/restful/Usuario.java</file>
+            <file>file:/C:/Repositorio%20Git/MeChame/MeChame/Server/br.com.mechame/src/java/br/com/mechame/restful/service/ApplicationConfig.java</file>
+            <file>file:/C:/Repositorio%20Git/MeChame/MeChame/Server/br.com.mechame/src/java/br/com/mechame/restful/service/LembreteFacadeREST.java</file>
+            <file>file:/C:/Repositorio%20Git/MeChame/MeChame/Server/br.com.mechame/src/java/javax/ejb/Stateless.java</file>
+            <file>file:/C:/Repositorio%20Git/MeChame/MeChame/Server/br.com.mechame/src/java/br/com/mechame/restful/Lembrete.java</file>
+            <file>file:/C:/Repositorio%20Git/MeChame/MeChame/Server/br.com.mechame/src/java/br/com/mechame/restful/Localizacao.java</file>
+            <file>file:/C:/Repositorio%20Git/MeChame/MeChame/Server/br.com.mechame/src/java/br/com/mechame/restful/service/LocalizacaoFacadeREST.java</file>
+        </group>
     </open-files>
 </project-private>
