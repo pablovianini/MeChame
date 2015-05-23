@@ -1,4 +1,32 @@
 <resources>
-    <string name="app_name">MeChame</string>
+    <string name="app_name">Me Chame</string>
     <string name="title_activity_maps">Me Chame</string>
+
+
+    <string name="title_activity_confirma_telefone">Me Chame</string>
+    <string name="txtDigiteTelefone">Digite seu Telefone</string>
+    <string name="txtTelefone">5511987654321 </string>
+    <string name="btnProsseguir">Prosseguir</string>
+
+
+    <string name="title_activity_cadastro_usuario">Cadastro Usuario</string>
+    <string name="txtPrimeiroAcesso">Primeiro Acesso !!</string>
+    <string name="txtNomeUsuario"> Nome Do Usuario</string>
+    <string name="txtEmailUsuario"> Email@Usuario</string>
+    <string name="txtSenhaUsuario"> Senha</string>
+    <string name="title_activity_login">Login</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="diametros">
+        <item>200</item>
+        <item>400</item>
+        <item>600</item>
+        <item>800</item>
+        <item>1000</item>
+    </string>
+
+
+
 </resources>

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.location.Address;
 import android.location.Geocoder;
 
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.model.LatLng;
 
 import java.io.IOException;
@@ -14,11 +15,10 @@ import java.util.List;
  */
 public class Localizador  {
 
-    private Geocoder geocoder;
-    public Localizador(Context ctx){
-        geocoder = new Geocoder(ctx);
-    }
-    public LatLng getCoordenada(String endereco){
+
+
+    public LatLng getCoordenada(String endereco, Context ctx){
+       Geocoder geocoder = new Geocoder(ctx);
         try {
 
             List<Address> listaEnd = geocoder.getFromLocationName(endereco, 1);
@@ -34,5 +34,18 @@ public class Localizador  {
         }
         return null;
 
+    }
+
+    public List<Address> mostraLocal(Context ctx,double localizacaoLat, double localizacaoLong) {
+
+        try {
+            List<Address> addresses;
+            Geocoder geocoder = new Geocoder(ctx);
+            addresses = geocoder.getFromLocation(localizacaoLat ,localizacaoLong, 1);
+            return addresses;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
