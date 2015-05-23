@@ -24,7 +24,8 @@ function initialize() {
 		draggable: true,
 	});
 	
-	marker.setPosition(latlng);
+	/*Habilita o ponteiro no mapa*/
+	/*marker.setPosition(latlng);*/
 }
 
 $(document).ready(function () {
