@@ -10,13 +10,12 @@ package br.com.mechame.lib;
  *
  * @author Pablo
  */
-import org.hibernate.*;
-import org.hibernate.cfg.AnnotationConfiguration;
 
 public final class HibernateUtil{
-    private static final SessionFactory sessionFactory = buildSessionFactory();
-    private static final Session session = sessionFactory.openSession();
+    //private static final SessionFactory sessionFactory = buildSessionFactory();
+    //private static final Session session = sessionFactory.openSession();
     
+    /*
     private static SessionFactory buildSessionFactory()
     {
         try
@@ -41,4 +40,5 @@ public final class HibernateUtil{
     private static void shutdown() {
         sessionFactory.close();
     }
+    */
 }
