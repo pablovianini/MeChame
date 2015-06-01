@@ -25,7 +25,7 @@ import javax.ws.rs.Produces;
  * @author Pablo
  */
 @Stateless
-@Path("br.com.mechame.logacesso")
+@Path("logacesso")
 public class LogAcessoFacadeREST extends AbstractFacade<LogAcesso> {
     @PersistenceContext(unitName = "ServerPU")
     private EntityManager em;
@@ -36,14 +36,14 @@ public class LogAcessoFacadeREST extends AbstractFacade<LogAcesso> {
 
     @POST
     @Override
-    @Consumes({"application/xml", "application/json"})
+    @Consumes("application/json")
     public void create(LogAcesso entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes({"application/xml", "application/json"})
+    @Consumes("application/json")
     public void edit(@PathParam("id") Long id, LogAcesso entity) {
         super.edit(entity);
     }
@@ -56,21 +56,21 @@ public class LogAcessoFacadeREST extends AbstractFacade<LogAcesso> {
 
     @GET
     @Path("{id}")
-    @Produces({"application/xml", "application/json"})
+    @Produces("application/json")
     public LogAcesso find(@PathParam("id") Long id) {
         return super.find(id);
     }
 
     @GET
     @Override
-    @Produces({"application/xml", "application/json"})
+    @Produces("application/json")
     public List<LogAcesso> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
-    @Produces({"application/xml", "application/json"})
+    @Produces("application/json")
     public List<LogAcesso> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }

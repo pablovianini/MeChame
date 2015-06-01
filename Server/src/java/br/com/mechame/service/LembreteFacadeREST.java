@@ -25,7 +25,7 @@ import javax.ws.rs.Produces;
  * @author Pablo
  */
 @Stateless
-@Path("br.com.mechame.lembrete")
+@Path("lembrete")
 public class LembreteFacadeREST extends AbstractFacade<Lembrete> {
     @PersistenceContext(unitName = "ServerPU")
     private EntityManager em;
@@ -36,14 +36,14 @@ public class LembreteFacadeREST extends AbstractFacade<Lembrete> {
 
     @POST
     @Override
-    @Consumes({"application/xml", "application/json"})
+    @Consumes("application/json")
     public void create(Lembrete entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes({"application/xml", "application/json"})
+    @Consumes("application/json")
     public void edit(@PathParam("id") Long id, Lembrete entity) {
         super.edit(entity);
     }
@@ -56,21 +56,21 @@ public class LembreteFacadeREST extends AbstractFacade<Lembrete> {
 
     @GET
     @Path("{id}")
-    @Produces({"application/xml", "application/json"})
+    @Produces("application/json")
     public Lembrete find(@PathParam("id") Long id) {
         return super.find(id);
     }
 
     @GET
     @Override
-    @Produces({"application/xml", "application/json"})
+    @Produces("application/json")
     public List<Lembrete> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
-    @Produces({"application/xml", "application/json"})
+    @Produces("application/json")
     public List<Lembrete> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }

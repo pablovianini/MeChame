@@ -25,7 +25,7 @@ import javax.ws.rs.Produces;
  * @author Pablo
  */
 @Stateless
-@Path("br.com.mechame.usuario")
+@Path("usuario")
 public class UsuarioFacadeREST extends AbstractFacade<Usuario> {
     @PersistenceContext(unitName = "ServerPU")
     private EntityManager em;
@@ -36,14 +36,14 @@ public class UsuarioFacadeREST extends AbstractFacade<Usuario> {
 
     @POST
     @Override
-    @Consumes({"application/xml", "application/json"})
+    @Consumes("application/json")
     public void create(Usuario entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes({"application/xml", "application/json"})
+    @Consumes("application/json")
     public void edit(@PathParam("id") Long id, Usuario entity) {
         super.edit(entity);
     }
@@ -56,21 +56,21 @@ public class UsuarioFacadeREST extends AbstractFacade<Usuario> {
 
     @GET
     @Path("{id}")
-    @Produces({"application/xml", "application/json"})
+    @Produces("application/json")
     public Usuario find(@PathParam("id") Long id) {
         return super.find(id);
     }
 
     @GET
     @Override
-    @Produces({"application/xml", "application/json"})
+    @Produces("application/json")
     public List<Usuario> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
-    @Produces({"application/xml", "application/json"})
+    @Produces("application/json")
     public List<Usuario> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }
