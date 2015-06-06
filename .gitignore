@@ -58,3 +58,17 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 /Web/nbproject/private/
+/Server/nbproject/private/
+/Server/build/
+/Server/dist/
+/ProjetoTesteServer/nbproject/private/
+/ProjetoTesteServer/dist/
+/ProjetoTesteServer/build/
+/WebApplication1/nbproject/private/
+/WebApplication1/build/
+/WebApplication1/dist/
+/MeChameAPI/build/
+/MeChameAPI/dist/
+/ApiMeChame/nbproject/private/
+/ApiMeChame/build/
+/ApiMeChame/dist/
